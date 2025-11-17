@@ -27,14 +27,9 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/r7al38/openredirect-aggregator.git
-cd openredirect-aggregator
+git clone https://github.com/r7al38/auto_redirect.git
+cd auto_redirect
 
-# Install required dependencies
-chmod +x install_dependencies.sh
-./install_dependencies.sh
-
-# Or install manually:
 # Install Go tools
 go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 go install github.com/projectdiscovery/waybackurls/cmd/waybackurls@latest  
@@ -46,4 +41,31 @@ cd paramspider && pip3 install -r requirements.txt
 cd ..
 
 # Make script executable
-chmod +x openredirect_aggregate.sh
+chmod +x auto_redirect.sh
+```
+## 🚀 Basic Usage
+
+```bash
+# Single domain scan
+./openredirect_aggregate.sh example.com
+
+# Multiple domains from file
+./openredirect_aggregate.sh -f domains.txt
+
+# Show help
+./openredirect_aggregate.sh -h
+```
+## 📊 Output Structure
+
+```bash
+openredirect_example.com_output_20231201_143022/
+├── 📄 report.txt              # Scan summary and statistics
+├── 📄 subdomains.txt          # All discovered subdomains
+├── 📄 live_subdomains.txt     # Verified live subdomains
+├── 📄 redirect_params.txt     # URLs containing redirect parameters
+├── 📄 redirect_vuln.txt       # Fuzzed patterns ready for testing
+└── 🔧 debug/                  # Temporary files (cleaned automatically)
+
+📄 all_urls_vuln.txt          # Aggregated patterns from all scans
+```
+# 📊 Developer - r7al38
