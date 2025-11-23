@@ -47,13 +47,13 @@ chmod +x auto_redirect.sh
 
 ```bash
 # Single domain scan
-./openredirect_aggregate.sh example.com
+./auto_redirect.sh example.com
 
 # Multiple domains from file
-./openredirect_aggregate.sh -f domains.txt
+./auto_redirect.sh -f domains.txt
 
 # Show help
-./openredirect_aggregate.sh -h
+./auto_redirect.sh -h
 ```
 ## 📊 Output Structure
 
