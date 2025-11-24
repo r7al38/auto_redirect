@@ -4,7 +4,7 @@
 # OpenRedirect Aggregation Tool
 # 
 # Automated discovery of open redirect vulnerabilities across multiple domains
-# Author: r7al38
+# Author: Mustafa Rahal
 # Version: 2.0
 # 
 # Features:
