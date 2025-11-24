@@ -68,4 +68,4 @@ openredirect_example.com_output_20231201_143022/
 
 📄 all_urls_vuln.txt          # Aggregated patterns from all scans
 ```
-# 📊 Developer - r7al38
+# 📊 Developer - Mustafa Rahal
